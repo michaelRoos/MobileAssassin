@@ -9,18 +9,16 @@ import static android.R.attr.id;
 import static android.R.id.list;
 
 public class GameList extends AppCompatActivity {
+    String[] mobileArray = {"Android","IPhone","WindowsMobile","Blackberry",
+            "WebOS","Ubuntu","Windows7","Max OS X"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_list);
-        ArrayAdapter adapter = new ArrayAdapter<String>(this, R.layout.activity_game_list, fetchNames());
-        ListView listView = (ListView) findViewById(list);
+        ArrayAdapter adapter = new ArrayAdapter<String>(this, R.layout.activity_listview, mobileArray);
+        ListView listView = (ListView) findViewById(R.id.mobile_list);
         listView.setAdapter(adapter);
-    }
-    private String[] fetchNames(){
-        String[] a = {"Game 1", "Game 2"};
-        return a;
     }
 
 
