@@ -42,7 +42,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".GameList"></activity>
+        <activity android:name=".GameList">The Name of the Game</activity>
     </application>
 
 </manifest>
