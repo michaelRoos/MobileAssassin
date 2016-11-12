@@ -1,17 +1,20 @@
+/**UNFINISHED**/
+
 package net.mobileassassin.mobileassassin;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import static android.R.attr.id;
 import static android.R.id.list;
 
 public class GameList extends AppCompatActivity {
-    String[] mobileArray = {"Android","IPhone","WindowsMobile","Blackberry",
-            "WebOS","Ubuntu","Windows7","Max OS X"};
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,8 +25,17 @@ public class GameList extends AppCompatActivity {
     }
 
     private String[] getArray(){
+        //Incomplete
         String[] asdf = {"Game 1", "Game 2"};
         return asdf;
+    }
+    public void myClickHandler(View v)
+    {
+        LinearLayout vwParentRow = (LinearLayout)v.getParent();
+        TextView child = (TextView)((LinearLayout)vwParentRow.getChildAt(0)).getChildAt(0);
+        Button btnChild = (Button)((LinearLayout)vwParentRow.getChildAt(1)).getChildAt(0);
+        btnChild.setText("Pressed");
+        vwParentRow.refreshDrawableState();
     }
 
 
