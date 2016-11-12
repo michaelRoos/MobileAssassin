@@ -29,13 +29,10 @@ public class GameList extends AppCompatActivity {
         String[] asdf = {"Game 1", "Game 2"};
         return asdf;
     }
-    public void myClickHandler(View v)
+    public void myClickHandler(TextView v)
     {
-        LinearLayout vwParentRow = (LinearLayout)v.getParent();
-        TextView child = (TextView)((LinearLayout)vwParentRow.getChildAt(0)).getChildAt(0);
-        Button btnChild = (Button)((LinearLayout)vwParentRow.getChildAt(1)).getChildAt(0);
-        btnChild.setText("Pressed");
-        vwParentRow.refreshDrawableState();
+        v.setText("abcd");
+        v.refreshDrawableState();
     }
 
 
