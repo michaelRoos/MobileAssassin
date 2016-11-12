@@ -11,9 +11,13 @@
     tools:context="net.mobileassassin.mobileassassin.GameList">
 
     <ListView
-        android:id="@+id/list"
+        android:id="@+id/mobile_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentTop="true">
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
     </ListView>
+
+
 </RelativeLayout>
