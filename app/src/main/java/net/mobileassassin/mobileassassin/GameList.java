@@ -16,9 +16,14 @@ public class GameList extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_list);
-        ArrayAdapter adapter = new ArrayAdapter<String>(this, R.layout.activity_listview, mobileArray);
+        ArrayAdapter adapter = new ArrayAdapter<String>(this, R.layout.activity_listview, getArray());
         ListView listView = (ListView) findViewById(R.id.mobile_list);
         listView.setAdapter(adapter);
+    }
+
+    private String[] getArray(){
+        String[] asdf = {"Game 1", "Game 2"};
+        return asdf;
     }
 
 
