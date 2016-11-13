@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_kill_confirm"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#D6D6D6"
+    tools:context="net.mobileassassin.mobileassassin.KillConfirm">
+
+    <TextView
+        android:text="Another assassin has claimed to have killed you!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:id="@+id/assassin_kill_message" />
+
+    <TextView
+        android:text="Confirm or Deny this claim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/assassin_kill_message"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:id="@+id/confirm_or_deny_message" />
+
+    <Button
+        android:text="   Confirm   "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirm_or_deny_message"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="#B00C22"
+        android:textSize="25sp"
+        android:id="@+id/confirm"
+        android:onClick="confirm"/>
+
+    <Button
+        android:text="    Deny    "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="#6b6b6b"
+        android:textSize="25sp"
+        android:id="@+id/deny"
+        android:onClick="deny"/>
+</RelativeLayout>

@@ -164,6 +164,9 @@ public class GoogleSignInActivity extends AppCompatActivity implements
                             Toast.makeText(GoogleSignInActivity.this, "Authentication failed.",
                                     Toast.LENGTH_SHORT).show();
                         }
+                        else{
+                            updateUI(true);
+                        }
                         // ...
                     }
                 });
@@ -268,7 +271,7 @@ public class GoogleSignInActivity extends AppCompatActivity implements
         if (signedIn) {
             findViewById(R.id.sign_in_button).setVisibility(View.GONE);
             findViewById(R.id.sign_out_and_disconnect).setVisibility(View.VISIBLE);
-            String text = FirebaseAuth.getInstance().getCurrentUser().getDisplayName();
+            //String text = FirebaseAuth.getInstance().getCurrentUser().getDisplayName();
             startActivity(new Intent(this, HomeScreen.class));
         } else {
             mStatusTextView.setText(R.string.signed_out);

@@ -7,7 +7,7 @@ import android.view.View;
 
 
 public class GameInfo extends AppCompatActivity {
-    private String game;
+    private String game;//to be implemented once we have database functionality
     private String player;
     public static String EXTRA_MESSAGE;
     public static String PLAYER;
@@ -30,8 +30,8 @@ public class GameInfo extends AppCompatActivity {
         startActivity(intent);
     }
     public void killClick(View v){
-        //Intent intent  = new Intent(this, KillAction.class);
-        //Delay until later
+        Intent intent  = new Intent(this, KillConfirm.class);
+        startActivity(intent);
     }
 
 

@@ -50,7 +50,8 @@
             android:label="@string/title_activity_maps" />
         <activity android:name=".CreateNew" />
         <activity android:name=".JoinOrCreate" />
-        <activity android:name=".JoinExisting"></activity>
+        <activity android:name=".JoinExisting" />
+        <activity android:name=".KillConfirm"></activity>
     </application>
 
 </manifest>
