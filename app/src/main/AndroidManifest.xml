@@ -40,7 +40,8 @@
         <activity android:name=".SignIn">
             Sign In
         </activity>
-        <activity android:name=".GameInfo"></activity>
+        <activity android:name=".GameInfo" />
+        <activity android:name=".PlayersList"></activity>
     </application>
 
 </manifest>

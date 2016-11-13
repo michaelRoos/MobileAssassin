@@ -113,7 +113,8 @@
         android:id="@+id/view_players_button"
         android:layout_below="@+id/mvp_ans"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="12dp" />
+        android:layout_marginTop="12dp"
+        android:onClick="playersClick"/>
 
     <Button
         android:text="View Map"
@@ -122,8 +123,9 @@
         android:textSize="20sp"
         android:layout_marginTop="13dp"
         android:id="@+id/view_map_button"
-        android:layout_below="@+id/button2"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/view_players_button"
+        android:layout_centerHorizontal="true"
+        android:onClick="mapClick"/>
 
 
 </RelativeLayout>
