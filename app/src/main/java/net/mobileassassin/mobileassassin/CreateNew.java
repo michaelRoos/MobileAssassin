@@ -19,6 +19,10 @@ public class CreateNew extends AppCompatActivity {
         s2 = (Spinner) findViewById(R.id.hours_spinner_2);
         s1.setClickable(false);
         s2.setClickable(false);
+        s1.setEnabled(false);
+        s2.setEnabled(false);
+        s1.setAlpha(.5f);
+        s2.setAlpha(.5f);
         Switch s = (Switch) findViewById(R.id.switch1);
         s.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -26,11 +30,15 @@ public class CreateNew extends AppCompatActivity {
                 if(b) {
                     s1.setClickable(true);
                     s2.setClickable(true);
+                    s1.setEnabled(true);
+                    s2.setEnabled(true);
                     s1.setAlpha(1f);
                     s2.setAlpha(1f);
                 } else {
                     s1.setClickable(false);
                     s2.setClickable(false);
+                    s1.setEnabled(false);
+                    s2.setEnabled(false);
                     s1.setAlpha(.5f);
                     s2.setAlpha(.5f);
                 }

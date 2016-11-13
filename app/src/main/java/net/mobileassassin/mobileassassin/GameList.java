@@ -36,9 +36,10 @@ public class GameList extends AppCompatActivity {
 
     private String[] getArray(){
         //Incomplete
-        String[] asdf = {"Game 1", "Game 2"};
+        String[] asdf = {"Game 1", "Game 2", "Game 3", "Game 4"};
         return asdf;
     }
+
     public void myClickHandler(View v)
     {
         TextView textView=(TextView)v;
@@ -46,18 +47,6 @@ public class GameList extends AppCompatActivity {
         String gameName = (String)textView.getText();
         intent.putExtra(EXTRA_MESSAGE, gameName);
         startActivity(intent);
-    }
-    private String[] lenCorrect(){
-        String[] ary = getArray();
-        String[] result = new String[ary.length];
-        for(int i = 0; i<ary.length; i++){
-            String a = " ";
-            for(int j=0; j<(30-ary[i].length())/2; j++){
-                a+=a;
-            }
-            result[i] = (a+ary[i]+a);
-        }
-        return result;
     }
     public void fabClick(View v){
         Intent intent = new Intent(this, JoinOrCreate.class);
