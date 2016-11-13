@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 public class GameList extends AppCompatActivity {
     public static String EXTRA_MESSAGE;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

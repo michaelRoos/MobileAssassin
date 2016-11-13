@@ -8,7 +8,9 @@ import android.view.View;
 
 public class GameInfo extends AppCompatActivity {
     private String game;
+    private String player;
     public static String EXTRA_MESSAGE;
+    public static String PLAYER;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,7 +18,7 @@ public class GameInfo extends AppCompatActivity {
 
         Intent intent = getIntent();
         game = intent.getStringExtra(GameList.EXTRA_MESSAGE);
-
+        player = "me";
 
     }
     public void playersClick(View v){
@@ -25,7 +27,14 @@ public class GameInfo extends AppCompatActivity {
         startActivity(intent);
     }
     public void mapClick(View v){
-
+        Intent intent = new Intent(this, MapsActivity.class);
+        intent.putExtra(EXTRA_MESSAGE, game);
+        intent.putExtra(PLAYER, player);
+        startActivity(intent);
+    }
+    public void killClick(View v){
+        //Intent intent  = new Intent(this, KillAction.class);
+        //Delay until later
     }
 
 
