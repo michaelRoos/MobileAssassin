@@ -23,7 +23,7 @@ public class GameList extends AppCompatActivity {
 
     private String[] getArray(){
         //Incomplete
-        String[] asdf = {"Game 1", "Game 2"};
+        String[] asdf = {"Game 1", "Game 2", "Game 3", "Game 4", "Game 5", "Game 6", "Game 7", "Game 8", "Game 9", "Game 10"};
         return asdf;
     }
     public void myClickHandler(View v)
