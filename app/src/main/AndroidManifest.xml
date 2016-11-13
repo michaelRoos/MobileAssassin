@@ -31,17 +31,30 @@
         <activity
             android:name=".HomeScreen"
             android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".GoogleSignInActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SignIn">
-            Sign In
+
+        <activity
+            android:name=".GameInfo">
         </activity>
-        <activity android:name=".GameInfo" />
-        <activity android:name=".PlayersList"></activity>
+
+        <activity
+            android:name=".GameList">
+
+        </activity>
+
+        <activity
+            android:name=".PlayersList">
+        </activity>
+
     </application>
 
 </manifest>
