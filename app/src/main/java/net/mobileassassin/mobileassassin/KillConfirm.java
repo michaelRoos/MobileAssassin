@@ -14,8 +14,10 @@ public class KillConfirm extends AppCompatActivity {
     public void confirm(View v){
         //send a push notification to the killer that the kill was successful, and assign the
         //other player a new target
+        finish();
     }
     public void deny(View v){
         //send a push notification to the killer that the request to kill was denied
+        finish();
     }
 }
