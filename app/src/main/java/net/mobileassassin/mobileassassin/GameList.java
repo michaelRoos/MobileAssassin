@@ -23,6 +23,16 @@ public class GameList extends AppCompatActivity {
         FloatingActionButton myFab = (FloatingActionButton)  listView.findViewById(R.id.myFAB);
     }
 
+    @Override
+    protected void onResume(){
+        super.onResume();
+        setContentView(R.layout.activity_game_list);
+        ArrayAdapter adapter = new ArrayAdapter<String>(this, R.layout.activity_listview, lenCorrect());
+        ListView listView = (ListView) findViewById(R.id.mobile_list);
+        listView.setAdapter(adapter);
+        FloatingActionButton myFab = (FloatingActionButton)  listView.findViewById(R.id.myFAB);
+    }
+
     private String[] getArray(){
         //Incomplete
         String[] asdf = {"Game 1", "Game 2"};
@@ -50,5 +60,6 @@ public class GameList extends AppCompatActivity {
     }
     public void fabClick(View v){
         Intent intent = new Intent(this, GameInfo.class);
+        startActivity(intent);
     }
 }
