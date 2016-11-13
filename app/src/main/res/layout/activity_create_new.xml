@@ -11,37 +11,5 @@
     android:background="#D6D6D6"
     tools:context="net.mobileassassin.mobileassassin.CreateNew">
 
-    <TextView
-        android:text="Enter Code for the Game"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:id="@+id/code"
-        android:textSize="30sp"
-        android:textColor="#000"/>
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Code"
-        android:ems="10"
-        android:layout_below="@+id/code"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="21dp"
-        android:id="@+id/code_text"
-        android:textSize="25sp"/>
-
-    <Button
-        android:text="   Join   "
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/join"
-        android:textSize="30sp"
-        android:background="#6b6b6b"
-        android:onClick="join"/>
 </RelativeLayout>

@@ -18,7 +18,7 @@ public class GameList extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_list);
-        ArrayAdapter adapter = new ArrayAdapter<String>(this, R.layout.activity_listview, lenCorrect());
+        ArrayAdapter adapter = new ArrayAdapter<String>(this, R.layout.activity_listview, getArray());
         ListView listView = (ListView) findViewById(R.id.mobile_list);
         listView.setAdapter(adapter);
         FloatingActionButton myFab = (FloatingActionButton)  listView.findViewById(R.id.myFAB);
@@ -28,7 +28,7 @@ public class GameList extends AppCompatActivity {
     protected void onResume(){
         super.onResume();
         setContentView(R.layout.activity_game_list);
-        ArrayAdapter adapter = new ArrayAdapter<String>(this, R.layout.activity_listview, lenCorrect());
+        ArrayAdapter adapter = new ArrayAdapter<String>(this, R.layout.activity_listview, getArray());
         ListView listView = (ListView) findViewById(R.id.mobile_list);
         listView.setAdapter(adapter);
         FloatingActionButton myFab = (FloatingActionButton)  listView.findViewById(R.id.myFAB);
@@ -60,7 +60,7 @@ public class GameList extends AppCompatActivity {
         return result;
     }
     public void fabClick(View v){
-        Intent intent = new Intent(this, GameInfo.class);
+        Intent intent = new Intent(this, JoinOrCreate.class);
         startActivity(intent);
     }
 }

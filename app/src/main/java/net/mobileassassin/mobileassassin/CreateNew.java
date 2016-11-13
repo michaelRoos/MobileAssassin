@@ -12,10 +12,5 @@ public class CreateNew extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_new);
     }
-    public void join(View v) {
-        EditText e = (EditText) findViewById(R.id.code_text);
-        String code = e.getText().toString();
-        //use this code to add this player to the game in the database
-        finish();
-    }
+
 }

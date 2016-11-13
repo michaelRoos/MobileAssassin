@@ -11,8 +11,8 @@ public class PlayersList extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_players_list);
-        ArrayAdapter adapter = new ArrayAdapter<String>(this, R.layout.activity_players_list,getArray());
-        ListView listView = (ListView) findViewById(R.id.mobile_list);
+        ArrayAdapter adapter = new ArrayAdapter<String>(this, R.layout.activity_listview,getArray());
+        ListView listView = (ListView) findViewById(R.id.player_list);
         listView.setAdapter(adapter);
     }
     private String[] getArray(){

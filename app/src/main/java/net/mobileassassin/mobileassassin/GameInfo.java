@@ -15,7 +15,6 @@ public class GameInfo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_info);
-
         Intent intent = getIntent();
         game = intent.getStringExtra(GameList.EXTRA_MESSAGE);
         player = "me";
@@ -23,13 +22,10 @@ public class GameInfo extends AppCompatActivity {
     }
     public void playersClick(View v){
         Intent intent = new Intent(this, PlayersList.class);
-        intent.putExtra(EXTRA_MESSAGE, game);
         startActivity(intent);
     }
     public void mapClick(View v){
         Intent intent = new Intent(this, MapsActivity.class);
-        intent.putExtra(EXTRA_MESSAGE, game);
-        intent.putExtra(PLAYER, player);
         startActivity(intent);
     }
     public void killClick(View v){

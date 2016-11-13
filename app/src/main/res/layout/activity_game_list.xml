@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="#D6D6D6"
-    tools:context=".PlayersList">
+    tools:context=".GameList">
 
     <ListView
         android:id="@+id/mobile_list"
@@ -15,6 +15,7 @@
         android:textAlignment="center">
     </ListView>
     <android.support.design.widget.FloatingActionButton
+        android:id="@+id/myFAB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

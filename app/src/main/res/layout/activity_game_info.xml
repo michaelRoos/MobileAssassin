@@ -156,7 +156,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="16dp"
             android:background="#6b6b6b"
-            android:onClick="playersClick"/>
+            android:onClick="killClick"/>
 
         <Button
             android:text="  View Players  "
