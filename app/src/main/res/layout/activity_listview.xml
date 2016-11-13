@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:onClick="myClickHandler"
     android:textSize="30sp"
-    android:layout_gravity="center"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
     xmlns:android="http://schemas.android.com/apk/res/android">
 </TextView>
