@@ -8,6 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#D6D6D6"
     tools:context="net.mobileassassin.mobileassassin.GameInfo">
 
     <TextView
@@ -21,6 +22,7 @@
         android:id="@+id/game_info_title"
         android:gravity="center"
         android:textStyle="bold"
+        android:textColor="#000000"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
@@ -34,6 +36,7 @@
         android:id="@+id/gameName"
         android:gravity="center"
         android:layout_below="@+id/game_info_title"
+        android:textColor="#B00C22"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
@@ -46,6 +49,7 @@
         android:layout_below="@+id/gameName"
         android:paddingBottom="16dp"
         android:gravity="center"
+        android:textColor="#B00C22"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
@@ -59,6 +63,7 @@
         android:id="@+id/playerCount"
         android:gravity="center"
         android:layout_below="@+id/gameName_ans"
+        android:textColor="#B00C22"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
@@ -73,6 +78,7 @@
         android:paddingBottom="16dp"
         android:gravity="center"
         android:layout_below="@+id/playerCount"
+        android:textColor="#B00C22"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
@@ -86,6 +92,7 @@
         android:id="@+id/mvp"
         android:gravity="center"
         android:layout_below="@+id/playerCount_ans"
+        android:textColor="#B00C22"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
@@ -100,13 +107,14 @@
         android:gravity="center"
         android:paddingBottom="16dp"
         android:layout_below="@+id/mvp"
+        android:textColor="#B00C22"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <Button
-        android:text="View Players"
+        android:text="  View Players  "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20sp"
@@ -114,17 +122,19 @@
         android:layout_below="@+id/mvp_ans"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="12dp"
+        android:background="#6b6b6b"
         android:onClick="playersClick"/>
 
     <Button
-        android:text="View Map"
+        android:text="  View Map  "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:layout_marginTop="13dp"
+        android:layout_marginTop="120dp"
         android:id="@+id/view_map_button"
         android:layout_below="@+id/view_players_button"
         android:layout_centerHorizontal="true"
+        android:background="#6b6b6b"
         android:onClick="mapClick"/>
 
 
