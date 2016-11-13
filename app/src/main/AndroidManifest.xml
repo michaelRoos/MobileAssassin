@@ -31,9 +31,9 @@
 
         <activity
             android:name=".HomeScreen"
-            android:screenOrientation="portrait"></activity>
-        <activity android:name=".GoogleSignInActivity"></activity>
-        <activity android:name=".GameInfo"></activity>
+            android:screenOrientation="portrait" />
+        <activity android:name=".GoogleSignInActivity" />
+        <activity android:name=".GameInfo" />
         <activity android:name=".GameList">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -41,10 +41,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PlayersList"></activity>
+        <activity android:name=".PlayersList" />
         <activity
             android:name=".MapsActivity"
-            android:label="@string/title_activity_maps"></activity>
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".CreateNew" />
+        <activity android:name=".JoinOrCreate" />
+        <activity android:name=".JoinExisting"></activity>
     </application>
 
 </manifest>
