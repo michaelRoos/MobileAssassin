@@ -10,4 +10,122 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="net.mobileassassin.mobileassassin.GameInfo">
 
+    <TextView
+        android:text="WELCOME TO THE ASSASSINATION CHAMBER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="30sp"
+        android:id="@+id/game_info_title"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Game Name:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp"
+        android:id="@+id/gameName"
+        android:gravity="center"
+        android:layout_below="@+id/game_info_title"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Fuck Bitches Get Money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:id="@+id/gameName_ans"
+        android:layout_below="@+id/gameName"
+        android:paddingBottom="16dp"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Player Count:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/playerCount"
+        android:gravity="center"
+        android:layout_below="@+id/gameName_ans"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="11/19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:id="@+id/playerCount_ans"
+        android:paddingBottom="16dp"
+        android:gravity="center"
+        android:layout_below="@+id/playerCount"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="MVP:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/mvp"
+        android:gravity="center"
+        android:layout_below="@+id/playerCount_ans"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Quinn Verbeke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:id="@+id/mvp_ans"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:layout_below="@+id/mvp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="View Players"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/view_players_button"
+        android:layout_below="@+id/mvp_ans"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:onClick="playersClick"/>
+
+    <Button
+        android:text="View Map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="13dp"
+        android:id="@+id/view_map_button"
+        android:layout_below="@+id/view_players_button"
+        android:layout_centerHorizontal="true"
+        android:onClick="mapClick"/>
+
+
 </RelativeLayout>

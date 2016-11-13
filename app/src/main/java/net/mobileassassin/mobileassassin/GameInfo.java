@@ -1,13 +1,32 @@
 package net.mobileassassin.mobileassassin;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+
 
 public class GameInfo extends AppCompatActivity {
-
+    private String game;
+    public static String EXTRA_MESSAGE;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_info);
+
+        Intent intent = getIntent();
+        game = intent.getStringExtra(GameList.EXTRA_MESSAGE);
+
+
     }
+    public void playersClick(View v){
+        Intent intent = new Intent(this, PlayersList.class);
+        intent.putExtra(EXTRA_MESSAGE, game);
+        startActivity(intent);
+    }
+    public void mapClick(View v){
+
+    }
+
+
 }

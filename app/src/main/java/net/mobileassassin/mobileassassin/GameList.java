@@ -2,6 +2,7 @@
 
 package net.mobileassassin.mobileassassin;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -9,12 +10,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
-import static android.R.attr.id;
-import static android.R.id.list;
-
 public class GameList extends AppCompatActivity {
+    public static String EXTRA_MESSAGE;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,12 +28,10 @@ public class GameList extends AppCompatActivity {
     }
     public void myClickHandler(View v)
     {
-        TextView textView = (TextView)v;
-        textView.setText("abcd");
-        textView.refreshDrawableState();
+        TextView textView=(TextView)v;
+        Intent intent = new Intent(this, GameInfo.class);
+        String gameName = (String)textView.getText();
+        intent.putExtra(EXTRA_MESSAGE, gameName);
+        startActivity(intent);
     }
-
-
-
-
 }
