@@ -4,35 +4,7 @@
     android:id="@+id/activity_home_screen"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/home"
     tools:context="net.mobileassassin.mobileassassin.HomeScreen">
-
-    <TextView
-        android:text="Mobile"
-        android:textSize="72sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="150dp"
-        android:id="@+id/activity_home_screen_Mobile" />
-
-    <TextView
-        android:text="Assassin"
-        android:textSize="72sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/activity_home_screen_Assassin"
-        android:layout_below="@+id/activity_home_screen_Mobile"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:text="The Game"
-        android:textSize="24sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/activity_home_screen_the"
-        android:layout_marginTop="10dp"
-        android:layout_below="@+id/activity_home_screen_Assassin"
-        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
