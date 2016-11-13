@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "594528346848",
+    "firebase_url": "https://mobileassassin-107d1.firebaseio.com",
+    "project_id": "mobileassassin-107d1",
+    "storage_bucket": "mobileassassin-107d1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:594528346848:android:6be95dc4dcf944a3",
+        "android_client_info": {
+          "package_name": "net.mobileassassin.mobileassassin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "594528346848-jc2vvcg4apljgd39d5pmr6itbb49b3ro.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "net.mobileassassin.mobileassassin",
+            "certificate_hash": "75777AF26AB110718D8FAAF3719F0FDBC72071F9"
+          }
+        },
+        {
+          "client_id": "594528346848-uqid5hqrphn865dnhhqoc7ip9atl1dkr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoW2vVy--iKfBlOek5OsCClDX2ajqU9Ts"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "594528346848-uqid5hqrphn865dnhhqoc7ip9atl1dkr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

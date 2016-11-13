@@ -4,9 +4,12 @@ package net.mobileassassin.mobileassassin;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 import static android.R.attr.id;
 import static android.R.id.list;
@@ -26,10 +29,11 @@ public class GameList extends AppCompatActivity {
         String[] asdf = {"Game 1", "Game 2"};
         return asdf;
     }
-    public void myClickHandler(TextView v)
+    public void myClickHandler(View v)
     {
-        v.setText("abcd");
-        v.refreshDrawableState();
+        TextView textView = (TextView)v;
+        textView.setText("abcd");
+        textView.refreshDrawableState();
     }
 
 
