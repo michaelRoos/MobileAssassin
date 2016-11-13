@@ -10,7 +10,8 @@
         android:id="@+id/mobile_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="center">
+        android:layout_gravity="center"
+        android:textAlignment="center">
     </ListView>
 
 </LinearLayout>

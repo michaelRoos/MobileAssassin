@@ -16,14 +16,14 @@ public class GameList extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_list);
-        ArrayAdapter adapter = new ArrayAdapter<String>(this, R.layout.activity_listview, getArray());
+        ArrayAdapter adapter = new ArrayAdapter<String>(this, R.layout.activity_listview, lenCorrect());
         ListView listView = (ListView) findViewById(R.id.mobile_list);
         listView.setAdapter(adapter);
     }
 
     private String[] getArray(){
         //Incomplete
-        String[] asdf = {"Game 1", "Game 2", "Game 3", "Game 4", "Game 5", "Game 6", "Game 7", "Game 8", "Game 9", "Game 10"};
+        String[] asdf = {"Game 1", "Game 2"};
         return asdf;
     }
     public void myClickHandler(View v)
@@ -33,5 +33,17 @@ public class GameList extends AppCompatActivity {
         String gameName = (String)textView.getText();
         intent.putExtra(EXTRA_MESSAGE, gameName);
         startActivity(intent);
+    }
+    private String[] lenCorrect(){
+        String[] ary = getArray();
+        String[] result = new String[ary.length];
+        for(int i = 0; i<ary.length; i++){
+            String a = " ";
+            for(int j=0; j<(30-ary[i].length())/2; j++){
+                a+=a;
+            }
+            result[i] = (a+ary[i]+a);
+        }
+        return result;
     }
 }
