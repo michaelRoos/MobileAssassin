@@ -25,6 +25,7 @@ public class GameInfo extends AppCompatActivity {
         startActivity(intent);
     }
     public void mapClick(View v){
+
         Intent intent = new Intent(this, MapsActivity.class);
         startActivity(intent);
     }
