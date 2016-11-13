@@ -1,15 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_create_new"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="#D6D6D6"
-    tools:context="net.mobileassassin.mobileassassin.CreateNew">
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_create_new"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:background="#D6D6D6"
+        tools:context="net.mobileassassin.mobileassassin.CreateNew">
 
 
-</RelativeLayout>
+        <TextView
+            android:text="Name of the Game:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="20sp"
+            android:id="@+id/name" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/new_game_name"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/name"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="Starts in:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textSize="20sp"
+            android:layout_below="@+id/new_game_name"
+            android:id="@+id/starts_in" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:entries="@array/time_array"
+            android:id="@+id/times_spinner"
+            android:layout_below="@+id/starts_in"/>
+
+        <Switch
+            android:text="Time Limit"
+            android:textSize="20sp"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/times_spinner"
+            android:id="@+id/switch1" />
+
+        <TextView
+            android:text="Daily Start:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:textSize="20sp"
+            android:layout_below="@+id/switch1"
+            android:id="@+id/daily_start" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/daily_start"
+            android:id="@+id/hours_spinner_1"
+            android:entries="@array/hours_array"/>
+
+
+        <TextView
+            android:text="Daily Stop:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:textSize="20sp"
+            android:layout_below="@+id/hours_spinner_1"
+            android:id="@+id/daily_stop" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/daily_stop"
+            android:id="@+id/hours_spinner_2"
+            android:entries="@array/hours_array"/>
+
+
+    </RelativeLayout>
+</ScrollView>
